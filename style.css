@@ -1,0 +1,297 @@
+
+body{
+    background-color: #eed3dc;
+    
+}
+
+.navbar-brand{
+    width: 380px; /* Desired width */
+    height: 77px; /* Desired height */
+    overflow: hidden; /* Ensures the image stays inside the container */
+}
+
+
+
+.logo{
+    height: 81px;
+    margin-left: 15px;
+    object-fit: cover; /* Crops the image to fit the container */
+    margin-left: 20px;
+    
+    
+}
+.navbar{
+    background-color: #eed3dc !important;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+   
+
+}
+
+/* Custom CSS to set nav-link text to black */
+.navbar-dark .nav-link {
+    color: rgb(93, 49, 97) !important;
+  }
+.navbar-dark .nav-link.active {
+    color: rgb(184, 47, 99) !important;
+  }
+
+.nav-link .dropdown-toggle {
+    color: rgb(93, 49, 97) !important;
+
+} 
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(184, 47, 99)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+
+.unav{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    background-color: #d44493;
+    border-top: none; /* Removes the top border */
+    border-radius: 0 0 70px 70px; /* Bottom-left and bottom-right corners */
+    display: block;
+    
+
+
+
+}
+.nav-link{
+    color: white;
+}
+
+
+@media (max-width: 499px) {
+    .unav {
+      display: none;
+    }
+  }
+  
+
+.hero{
+    width: 100%;
+    height:500px;
+    background-image: url(./assets/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(90%);
+    display: flex;
+    padding-left: 5%;
+    padding-top: 10%;
+    
+    margin-top: 1px;
+    margin-bottom: 60px;
+    
+   
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.849);
+    line-height: 1.3; /* Tight line spacing */
+    background-color: rgba(67, 17, 68, 0.199); /* Pink shade with transparency */
+  background-blend-mode: overlay;
+
+    
+   
+}
+
+.hero::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  background: url('./assets/grung.png') ; /* Your distressed texture image */
+  background-color: rgba(99, 93, 16, 0.247); /* White overlay */
+  mix-blend-mode: lighten; /* Blend it with the background */
+  z-index: 1;
+}
+
+.hero1{
+    display: flex;
+    
+    justify-content: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+h3{
+    display: inline-block;
+    position: relative;
+    color: rgb(184, 47, 99);
+}
+
+h3::after{
+    content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 8px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 10"><path d="M0 5 Q10 0 20 5 T40 5 T60 5 T80 5 T100 5 T120 5" fill="transparent" stroke="rgb(184, 47, 99)" stroke-width="2"/></svg>') repeat-x;
+}
+
+
+.hero2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Concert One", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(88, 17, 88);
+  line-height: 1.1; /* Tight line spacing */
+  margin-bottom: 50px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow wrapping of flex items */
+  align-items: center;
+}
+
+/* Adjust layout for screens below 1103px */
+@media (max-width: 1103px) {
+  .features {
+    flex-direction: row; /* Keep row layout */
+  }
+  .features > * { /* Target child elements (cards) */
+    flex: 1 1 calc(50% - 30px); /* Ensure two cards per row with gap accounted for */
+    max-width: calc(50% - 30px);
+  }
+}
+
+.card{
+  border-color: #d44493;
+  text-align: center;
+  padding: 10px;
+  min-width: 250px;
+  min-height: 310px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(90, 19, 78, 0.788); /* Drop shadow */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+  margin-bottom: 50px;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(45deg, #ffe4e9, #fcd5ce);
+
+
+  
+  
+  
+}
+
+
+
+
+
+
+.card:hover {
+  box-shadow: 0 8px 12px rgb(0, 0, 0);
+}
+.card-title{
+  color:  rgb(54, 17, 88);
+  font-size: 25px;
+}
+
+.card-text{
+  color: rgb(92, 78, 78);
+}
+
+
+.about{
+  margin-top: 50px;
+}
+
+.abo{
+
+  border-radius: 5px;
+  
+}
+
+.c1{
+  background-image: url(./assets/c1.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: center;
+  background-position-y: bottom;
+}
+
+.c2{
+  background-image: url(./assets/c2.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+  background-position-y: bottom;
+  background-position-x: 190px;
+}
+
+.c3{
+  background-image: url(./assets/c3.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: center;
+  background-position-y: bottom;
+
+}
+
+.c4{
+  background-image: url(./assets/c4.png);
+  background-repeat: no-repeat;
+  background-size: 89px;
+  background-position: center;
+  background-position-y: bottom;
+  background-position-x: 180px;
+}
+
+.cform{
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+  
+  border-color: #d44493;
+  border-style: dashed;
+  padding: 20px;
+}
+
+.gallery{
+  max-height: 450px;
+  
+}
+
+@media(max-width: 700px){
+  .gallery{
+    max-width: 375px;
+  }
+}
+
+.galleryy{
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(90, 19, 78, 0.151); /* Drop shadow */
+ 
+
+}
